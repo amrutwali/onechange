@@ -1,0 +1,52 @@
+[
+    {
+        "currency": "USD",
+        "fullname": "United States Dollar",
+        "image": "https://hatscripts.github.io/circle-flags/flags/us.svg"
+    },
+    {
+        "currency": "INR",
+        "fullname": "Indian Rupee",
+        "image": "https://hatscripts.github.io/circle-flags/flags/in.svg"
+    },
+    {
+        "currency": "GBP",
+        "fullname": "Great Britain Pound",
+        "image": "https://hatscripts.github.io/circle-flags/flags/gb.svg"
+    },
+    {
+        "currency": "JPY",
+        "fullname": "Japanese Yen",
+        "image": "https://hatscripts.github.io/circle-flags/flags/jp.svg"
+    },
+    {
+        "currency": "AED",
+        "fullname": "UAE Dirham",
+        "image": "https://hatscripts.github.io/circle-flags/flags/ae.svg"
+    },
+    {
+        "currency": "CNY",
+        "fullname": "Chinese Yuan",
+        "image": "https://hatscripts.github.io/circle-flags/flags/cn.svg"
+    },
+    {
+        "currency": "RUB",
+        "fullname": "Russian Ruble",
+        "image": "https://hatscripts.github.io/circle-flags/flags/ru.svg"
+    },
+    {
+        "currency": "EUR",
+        "fullname": "Euro",
+        "image": "https://hatscripts.github.io/circle-flags/flags/eu.svg"
+    },
+    {
+        "currency": "CHF",
+        "fullname": "Swiss Franc",
+        "image": "https://hatscripts.github.io/circle-flags/flags/ch.svg"
+    },
+    {
+        "currency": "AUD",
+        "fullname": "Australian Dollar",
+        "image": "https://hatscripts.github.io/circle-flags/flags/au.svg"
+    }
+]
