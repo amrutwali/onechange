@@ -34,7 +34,7 @@ const Popup = ({ trigger, setter, selectCountry, children }) => {
 		>
 			<Inner className="inner-popup">
 				{children}
-				<List>
+				<List className="scroll--simple">
 					<ul>{currenylist}</ul>
 				</List>
 			</Inner>

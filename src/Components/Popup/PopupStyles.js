@@ -16,20 +16,26 @@ const Wrapper = styled.div`
 const Inner = styled.div`
 	position: relative;
 	padding: 20px;
+	height: 80%;
 	width: 100%;
 	max-width: 400px;
 	background-color: var(--picker-background);
 	border-radius: 1.5rem;
 	border: 1px solid var(--border);
+	overflow-y: hidden;
 
 	h2 {
+		margin: 0;
+		padding: 1.25rem 0;
 		font-weight: var(--weight-big);
+		border-bottom: 1px solid var(--border);
 	}
 `;
 
 const List = styled.div`
 	width: 100%;
-	padding: 0;
+	height: calc(100% - 3rem);
+	overflow-y: scroll;
 
 	ul {
 		padding: 0;

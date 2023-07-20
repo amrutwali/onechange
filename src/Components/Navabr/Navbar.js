@@ -24,12 +24,12 @@ const Navbar = () => {
 						>
 							<li>Swap</li>
 						</NavLink>
-						<NavLink
+						{/* <NavLink
 							className={({ isActive }) => (isActive ? 'active' : 'inactive')}
 							to="/conversion"
 						>
 							<li>Conversion</li>
-						</NavLink>
+						</NavLink> */}
 					</ul>
 				</div>
 			</Navigation>
