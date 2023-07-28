@@ -33,22 +33,28 @@ const Swap = () => {
 		async function fetchCurrencyData() {
 			if (sessionStorage.getItem(`${state1.currency}/${state2.currency}`))
 				return;
-			const response = await axios.get('http://localhost:4000/convert', {
-				params: {
-					from: state1.currency,
-					to: state2.currency,
-				},
-			});
+			const response = await axios.get(
+				`${process.env.REACT_APP_API_URI}/convert`,
+				{
+					params: {
+						from: state1.currency,
+						to: state2.currency,
+					},
+				}
+			);
 			sessionStorage.setItem(
 				`${response.data.from}/${response.data.to}`,
 				response.data.value
 			);
-			const response2 = await axios.get('http://localhost:4000/convert', {
-				params: {
-					from: state2.currency,
-					to: state1.currency,
-				},
-			});
+			const response2 = await axios.get(
+				`${process.env.REACT_APP_API_URI}/convert`,
+				{
+					params: {
+						from: state2.currency,
+						to: state1.currency,
+					},
+				}
+			);
 			sessionStorage.setItem(
 				`${response2.data.from}/${response2.data.to}`,
 				response2.data.value
@@ -142,7 +148,7 @@ const Swap = () => {
 						placeholder="0"
 						type="number"
 						ref={input1Ref}
-						maxlength="10"
+						maxLength="10"
 						// value={value1}
 						onChange={handleChangeOne}
 					/>
@@ -176,7 +182,7 @@ const Swap = () => {
 						placeholder="0"
 						type="number"
 						ref={input2Ref}
-						maxlength="10"
+						maxLength="10"
 						// value={value2}
 						onChange={handleChangeTwo}
 						// disabled={loading}

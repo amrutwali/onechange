@@ -62,6 +62,55 @@ const Search = styled.div`
 	font-weight: 400;
 	gap: 10px;
 	transition: border 200ms ease-in-out;
+	position: relative;
+
+	.searchList {
+		position: absolute;
+		top: 3rem;
+		left: 0rem;
+		z-index: 5;
+		width: inherit;
+		padding-inline: 2rem;
+		background-color: var(--picker-background);
+		border-radius: 1.5rem;
+		border: 1px solid var(--border);
+		overflow-y: scroll;
+		/* overflow-y: hidden; */
+		max-height: 50vh;
+	}
+
+	.searchList {
+		width: 100%;
+	}
+	.searchList ul {
+		padding: 0;
+	}
+	.searchList li {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+		height: 4rem;
+	}
+	.searchList li :hover {
+		cursor: pointer;
+	}
+	.searchList li img {
+		width: 40px;
+		align-self: center;
+	}
+	.searchList li span {
+		margin: 0 20px;
+		font-weight: 500;
+		font-size: var(--font-medium);
+	}
+	.searchList li p {
+		color: var(--button);
+		margin-left: auto;
+		text-align: right;
+	}
 
 	:hover {
 		border-radius: 12px;
